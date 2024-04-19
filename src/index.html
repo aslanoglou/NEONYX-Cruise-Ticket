@@ -111,7 +111,7 @@
                 <span class="d-block">Kindly note that this form must not be printed using double-sided printing</span>
             </p>
             <div class="bg-light-brown p-2 mb-2">
-                <p class="mb-0">Dear _________,</p>
+                <p class="mb-0">Dear <span>_________</span>,</p>
                 <p>Kindly ensure that this form, automatically filled with the information you provided during booking process,
                 is presented during embarkation. Please verify that the personal documents presented match those
                     provided during booking process.</p>
@@ -140,19 +140,40 @@
                 </div>
             </div>
 
-            <form class="form form--emergency needs-validation mb-5" novalidate>
+            <div class="form form--emergency needs-validation mb-5" novalidate>
                 <h5 class="h5 text-primary">EMERGENCY CONTACT DETAILS</h5>
                 <div class="mb-0 row">
-                    <label for="staticEmail" class="col-sm-2 col-form-label">Name/Last Name</label>
+                    <label for="email1" class="col-sm-2 col-form-label">Name/Last Name</label>
                     <div class="col-sm-10">
-                        <input type="text" readonly class="form-control border-0" id="staticEmail" value="email@example.com">
+                        <input type="text" readonly class="form-control border-0" id="email1" value="email@example.com">
                     </div>
                 </div>
                 <hr class="my-0">
                 <div class="mb-2 row">
-                    <label for="inputPassword" class="col-sm-2 col-form-label">Tel.no</label>
+                    <label for="tel1" class="col-sm-2 col-form-label">Tel.no</label>
                     <div class="col-sm-10">
-                        <input type="tel" class="form-control border-0" id="inputPassword" required>
+                        <input type="tel" readonly class="form-control border-0" id="tel1" value="2101234567">
+                    </div>
+                </div>
+                <div class="alert alert-orange d-flex align-items-center" role="alert">
+                    <svg height="20px" version="1.1" viewBox="0 0 20 20" width="20px" xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="currentColor" id="Core" transform="translate(-2.000000, -212.000000)"><g id="error" transform="translate(2.000000, 212.000000)"><path d="M10,0 C4.5,0 0,4.5 0,10 C0,15.5 4.5,20 10,20 C15.5,20 20,15.5 20,10 C20,4.5 15.5,0 10,0 L10,0 Z M11,15 L9,15 L9,13 L11,13 L11,15 L11,15 Z M11,11 L9,11 L9,5 L11,5 L11,11 L11,11 Z" id="Shape"/></g></g></g></svg>
+                    <div>If the details entered are incorrect, please enter the correct details in the form below. </div>
+                </div>
+            </div>
+
+            <div class="form form--emergency needs-validation mb-5" novalidate>
+                <h5 class="h5 text-primary">EMERGENCY CONTACT DETAILS</h5>
+                <div class="mb-0 row">
+                    <label for="email2" class="col-sm-2 col-form-label">Name/Last Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control border-0" id="email2">
+                    </div>
+                </div>
+                <hr class="my-0">
+                <div class="mb-2 row">
+                    <label for="tel2" class="col-sm-2 col-form-label">Tel.no</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control border-0" id="tel2" required>
                     </div>
                 </div>
                 <div class="alert alert-orange d-flex align-items-center" role="alert">
@@ -161,7 +182,7 @@
                         for help to update them.
                     </div>
                 </div>
-            </form>
+            </div>
 
             <div class="table-responsive mb-3">
                 <table class="table table-bordered border-white bg-primary">
@@ -187,72 +208,216 @@
                 </table>
             </div>
 
-            <div class="table-responsive mb-3">
-                <table class="table border-primary caption-top">
-                <caption class="text-orange">ALL BELOW FIELDS ARE REQUIRED</caption>
-                <tbody>
-                <tr>
-                    <th class="fw-normal">Last name</th>
-                    <td>Lorem ipsum</td>
-                    <th class="fw-normal">State</th>
-                    <td>Lorem ipsum</td>
-                </tr>
-                <tr>
-                    <th class="fw-normal">Country of issue</th>
-                    <td>Lorem ipsum</td>
-                    <th class="fw-normal">Place of birth</th>
-                    <td>Lorem ipsum</td>
-                </tr>
-                <tr>
-                    <th class="fw-normal">First Name</th>
-                    <td>Lorem ipsum</td>
-                    <th class="fw-normal">Country</th>
-                    <td>Lorem ipsum</td>
-                </tr>
-                <tr>
-                    <th class="fw-normal">Address<sup class="text-orange">(2)</sup></th>
-                    <td>Lorem ipsum</td>
-                    <th class="fw-normal">Passport/ID card no.</th>
-                    <td>Lorem ipsum</td>
-                </tr>
-                <tr>
-                    <th class="fw-normal">Nationality</th>
-                    <td>Lorem ipsum</td>
-                    <th class="fw-normal">Mobile<sup class="text-orange">(2)</sup></th>
-                    <td>Lorem ipsum</td>
-                </tr>
-                <tr>
-                    <th class="fw-normal">City</th>
-                    <td>Lorem ipsum</td>
-                    <th class="fw-normal">Date of issue (dd/mm/yy)</th>
-                    <td>Lorem ipsum</td>
-                </tr>
-                <tr>
-                    <th class="fw-normal">Date of birth</th>
-                    <td>Lorem ipsum</td>
-                    <th class="fw-normal">Home Tel. </th>
-                    <td>Lorem ipsum</td>
-                </tr>
-                <tr>
-                    <th class="fw-normal">Zip code</th>
-                    <td>Lorem ipsum</td>
-                    <th class="fw-normal">Expiry Date (dd/mm/yy) </th>
-                    <td>Lorem ipsum</td>
-                </tr>
-                <tr>
-                    <th class="fw-normal">Gender</th>
-                    <td>Lorem ipsum</td>
-                    <th class="fw-normal">Email<sup class="text-orange">(2)</sup> </th>
-                    <td>Lorem ipsum</td>
-                </tr>
-                </tbody>
-            </table>
+            <!-- ALL BELOW FIELDS ARE REQUIRED FORM-->
+            <div class="mb-5">
+                <h6 class="h6 text-orange">ALL BELOW FIELDS ARE REQUIRED</h6>
+                <div class="mb-3">
+                    <div class="row ">
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Last name
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="lastName" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    State
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="state" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Country of issue
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="countryIssue" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Place of birth
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="placeBirth" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    First Name
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="firstName" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Country
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="Country" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Address<sup class="text-orange">(2)</sup>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="Address" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Passport/ID card no.
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="passportID" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Nationality
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="nationality" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Mobile<sup class="text-orange">(2)</sup>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="Mobile" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    City
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="City" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Date of issue (dd/mm/yy)
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="DateOfIssue" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Date of birth
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="dateOfBirth" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Home Tel.
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="HomeTel" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Zip code
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="ZipCode" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Expiry Date (dd/mm/yy)
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="ExpiryDate" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Gender
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="Gender" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="row border-bottom border-primary align-items-center">
+                                <div class="col-6">
+                                    Email<sup class="text-orange">(2)</sup>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" readonly class="form-control border-0" id="email3" value="Lorem Ipsum">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details text-orange">
+                    1* Please refrain from arriving for check-in before the designated time. You will be asked to wait outside the terminal until your scheduled check-in time. Kindly adhere
+                    to your assigned check-in time to prevent any delays at the cruise terminal. Please note that the departure time is subject to change without prior notice, and embarkation closes 2 hours before the ship's departure. 2* It is required to provide your mobile phone numbers and email addresses to ensure you receive crucial updates
+                    about the cruise. Please ensure that accurate and current contact details for at least one member of your party are provided.
+                </div>
             </div>
-            <div class="details text-orange">
-                1* Please refrain from arriving for check-in before the designated time. You will be asked to wait outside the terminal until your scheduled check-in time. Kindly adhere
-                to your assigned check-in time to prevent any delays at the cruise terminal. Please note that the departure time is subject to change without prior notice, and embarkation closes 2 hours before the ship's departure. 2* It is required to provide your mobile phone numbers and email addresses to ensure you receive crucial updates
-                about the cruise. Please ensure that accurate and current contact details for at least one member of your party are provided.
-            </div>
+
         </section>
     </div>
 </div>
