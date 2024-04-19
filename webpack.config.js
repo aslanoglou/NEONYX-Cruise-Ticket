@@ -8,7 +8,7 @@ module.exports = {
     mode: 'development',
     // entry: './src/js/main.js',
     entry: {
-        main: './src/js/main.js',
+        // main: './src/js/main.js',
         // critical: '/src/critical.js',
         // bootstrap: '/src/bootstrap.js',
     },

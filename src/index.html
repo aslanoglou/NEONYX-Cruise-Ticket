@@ -4,9 +4,67 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Custom Bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Hello, world!</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto atque consequatur cum cupiditate, dignissimos dolorum eligendi enim illo inventore iste itaque neque nesciunt nulla placeat quibusdam sapiente sunt velit?</p>
+<style>
+    .neonyx{
+
+    }
+    .oswald-bold {
+        font-family: "Oswald", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .neonyx h2{
+        background-color: #C0B863; color: #363D71; padding: 8px 8px 8px 16px; line-height: 1; font-size: 32px;
+    }
+    @media (min-width: 1280px) {
+        .neonyx.container{
+            width: 1280px;
+            margin: 0 auto;
+        }
+    }
+</style>
+<div class="neonyx container">
+    <h2 class="oswald-bold" style="">TICKET</h2>
+    <div style="overflow-x: auto; padding: 16px; border:solid 1px #C0B863;">
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr style="border-bottom: solid 1px #C0B863!important;">
+                <td style="padding-bottom: 16px;">Guest(s)</td>
+                <td style="padding-bottom: 16px;">Lorem ipsum</td>
+            </tr>
+            <tr style="border-bottom: solid 1px #C0B863!important;">
+                <td style="padding-top:16px; padding-bottom: 16px;">Ship</td>
+                <td>GODDESS OF THE NIGHT</td>
+            </tr>
+            <tr style="border-bottom: solid 1px #C0B863!important;">
+                <td style="padding-top:16px; padding-bottom: 16px;">Cabin Type</td>
+                <td>Lorem ipsum</td>
+            </tr>
+            <tr style="border-bottom: solid 1px #C0B863!important;">
+                <td style="padding-top:16px; padding-bottom: 16px;">Cabin Number<br>
+                    <i>(assigned 3 days prior to check-in)</i></td>
+                <td>Lorem ipsum</td>
+            </tr>
+            <tr style="border-bottom: solid 1px #C0B863!important;">
+                <td style="padding-top:16px; padding-bottom: 16px;">Port</td>
+                <td>Lorem ipsum</td>
+            </tr>
+            <tr style="border-bottom: solid 1px #C0B863!important;">
+                <td style="padding-top:16px; padding-bottom: 16px;">Embarkation Date</td>
+                <td>00/00/0000</td>
+            </tr>
+            <tr>
+                <td style="padding-top:16px;">Booking number</td>
+                <td style="padding-top:16px;">00/00/0000</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
 </body>
 </html>
