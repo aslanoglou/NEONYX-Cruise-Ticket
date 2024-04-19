@@ -10,17 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aslanoglou/bootstrap-5.3-webpack.git"
+    "url": "git+https://github.com/ignotaio/deddie-webapp-laywers.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aslanoglou/bootstrap-5.3-webpack/issues"
+    "url": "https://github.com/ignotaio/deddie-webapp-laywers/issues"
   },
-  "homepage": "https://github.com/aslanoglou/bootstrap-5.3-webpack#readme",
+  "homepage": "https://github.com/ignotaio/deddie-webapp-laywers",
   "devDependencies": {
     "autoprefixer": "^10.4.16",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.6.0",
     "mini-css-extract-plugin": "^2.7.6",

@@ -2,70 +2,261 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Custom Bootstrap</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <style>
-        .neonyx{
-
-        }
-        .oswald-bold {
-            font-family: "Oswald", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 400;
-            font-style: normal;
-        }
-        .neonyx h2{
-            background-color: #C0B863; color: #363D71; padding: 8px 8px 8px 16px; line-height: 1; font-size: 32px;
-        }
-        @media (min-width: 1280px) {
-            .neonyx.container{
-                width: 1280px;
-                margin: 0 auto;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap"
+          rel="stylesheet">
 </head>
 <body>
+<div class="neonyx">
+    <div class="container-xl">
+        <header class="neonyx__header">
+            <a class="neonyx__header__logo" href=""><img alt="" src="images/neonyx-logo.svg" width="250"/></a>
+            <a class="neonyx__header__barcode" href=""><img src="https://place-hold.it/80x80" width="80"/> </a>
+        </header>
+        <section class="mb-5">
+            <h2 class="h2" style="">TICKET</h2>
+            <div class="table-responsive table-ticket">
+                <table class="table table-sm">
+                    <tr style="">
+                        <td>Guest(s)</td>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Ship</td>
+                        <td>GODDESS OF THE NIGHT</td>
+                    </tr>
+                    <tr>
+                        <td>Cabin Type</td>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Cabin Number<br>
+                            <i>(assigned 3 days prior to check-in)</i></td>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Port</td>
+                        <td>Lorem ipsum</td>
+                    </tr>
+                    <tr>
+                        <td>Embarkation Date</td>
+                        <td>00/00/0000</td>
+                    </tr>
+                    <tr>
+                        <td>Booking number</td>
+                        <td>00/00/0000</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h3 class="h3">Dear Guest</h3>
+                    <p>Welcome aboard the Neonyx Cruises Goddess of the
+                        Night! We're absolutely thrilled to have you join us for
+                        an adventure like no other. The party has just begun!
+                        Get ready to dive into a world of excitement and
+                        wonder as we set sail under the Greek sky. At Neonyx
+                        Cruises, we're all about creating mind-blowing experiences on board! Whether you're looking for
+                        unlimited
+                        entertainment or indulging in specialty restaurants and
+                        relaxing spa treatments, we've got you covered.</p>
+                    <p>From thrilling onboard activities to Instagram-worthy
+                        moments at every turn, there's never a dull moment
+                        when you're with us. During your cruise, we have
+                        ensured a smooth trip for you. Our experienced crew
+                        will make you feel right at home, ensuring that every
+                        moment is filled with comfort and enjoyment. Here is
+                        your personalized ticket, meticulously crafted to
+                        provide you with everything you need for a carefree
+                        journey. So sit back, relax, and get ready to make memories that will last a lifetime.</p>
+                    <p class="text-end">Warm regards,</p>
+                    <p class="text-end">(insert name)</p>
+                    <p class="text-end oswald-font">CAPTAIN OF THE GODDESS OF THE NIGHT</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2 class="h2">CONTENTS</h2>
+                    <nav class="content-nav">
+                        <ol>
+                            <li><a href="#EMBARKATION-FORM">EMBARKATION FORM</a> </li>
+                            <li><a href="#HEALTH-QUESTIONNAIRE">HEALTH QUESTIONNAIRE</a> </li>
+                            <li><a href="#YOUR-PARTY-CRUISE">YOUR PARTY CRUISE</a>
+                                <ul>
+                                    <li><a href="#ITINERARY">ITINERARY</a> </li>
+                                    <li><a href="#BOOKING-INFORMATION">BOOKING INFORMATION</a> </li>
+                                    <li><a href="#INCLUSIONS">INCLUSIONS</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="#ADDITIONS-IN-YOUR-PACKAGE">ADDITIONS IN YOUR PACKAGE</a> </li>
+                            <li><a href="#CRUISE-DESTINATIONS">CRUISE DESTINATIONS</a> </li>
+                            <li><a href="#ELEVATE-YOUR-CRUISE-EXPERIENCE">ELEVATE YOUR CRUISE EXPERIENCE</a> </li>
+                            <li><a href="#DEPARTURE-ESSENTIALS">DEPARTURE ESSENTIALS</a> </li>
+                            <li><a href="#EMBARKATION-ESSENTIALS">EMBARKATION ESSENTIALS</a> </li>
+                            <li><a href="#SAFETY-PROTOCOL">SAFETY PROTOCOL</a> </li>
+                            <li><a href="#LUGGAGE-TAGS">LUGGAGE TAGS</a> </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
 
-<div class="neonyx container">
-    <h2 class="oswald-bold" style="">TICKET</h2>
-    <div style="overflow-x: auto; padding: 16px; border:solid 1px #C0B863;">
-        <table style="width: 100%; border-collapse: collapse;">
-            <tr style="border-bottom: solid 1px #C0B863!important;">
-                <td style="padding-bottom: 16px;">Guest(s)</td>
-                <td style="padding-bottom: 16px;">Lorem ipsum</td>
-            </tr>
-            <tr style="border-bottom: solid 1px #C0B863!important;">
-                <td style="padding-top:16px; padding-bottom: 16px;">Ship</td>
-                <td>GODDESS OF THE NIGHT</td>
-            </tr>
-            <tr style="border-bottom: solid 1px #C0B863!important;">
-                <td style="padding-top:16px; padding-bottom: 16px;">Cabin Type</td>
-                <td>Lorem ipsum</td>
-            </tr>
-            <tr style="border-bottom: solid 1px #C0B863!important;">
-                <td style="padding-top:16px; padding-bottom: 16px;">Cabin Number<br>
-                    <i>(assigned 3 days prior to check-in)</i></td>
-                <td>Lorem ipsum</td>
-            </tr>
-            <tr style="border-bottom: solid 1px #C0B863!important;">
-                <td style="padding-top:16px; padding-bottom: 16px;">Port</td>
-                <td>Lorem ipsum</td>
-            </tr>
-            <tr style="border-bottom: solid 1px #C0B863!important;">
-                <td style="padding-top:16px; padding-bottom: 16px;">Embarkation Date</td>
-                <td>00/00/0000</td>
-            </tr>
-            <tr>
-                <td style="padding-top:16px;">Booking number</td>
-                <td style="padding-top:16px;">00/00/0000</td>
-            </tr>
-        </table>
+        <section id="EMBARKATION-FORM" class="embarkation-form mb-5">
+            <h2 class="h2">01. EMBARKATION FORM</h2>
+            <p>
+                <span class="fs-5 d-block">Please ensure this form is provided upon embarkation.</span>
+                <span class="d-block">Kindly note that this form must not be printed using double-sided printing</span>
+            </p>
+            <div class="bg-light-brown p-2 mb-2">
+                <p class="mb-0">Dear _________,</p>
+                <p>Kindly ensure that this form, automatically filled with the information you provided during booking process,
+                is presented during embarkation. Please verify that the personal documents presented match those
+                    provided during booking process.</p>
+            </div>
+            <div class="row align-items-center mb-5">
+                <div class="col">
+                    <div class="table-responsive mb-0">
+                        <table class="table table-light">
+                            <tr>
+                                <td>Cabin</td>
+                                <td>Lorem Ipsum</td>
+                            </tr>
+                            <tr>
+                                <td>Cabin</td>
+                                <td>Lorem Ipsum</td>
+                            </tr>
+                            <tr>
+                                <td>Cabin</td>
+                                <td>Lorem Ipsum</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col col-auto">
+                    <img src="https://place-hold.it/80x80" width="80"/>
+                </div>
+            </div>
+
+            <form class="form form--emergency needs-validation mb-5" novalidate>
+                <h5 class="h5 text-primary">EMERGENCY CONTACT DETAILS</h5>
+                <div class="mb-0 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Name/Last Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control border-0" id="staticEmail" value="email@example.com">
+                    </div>
+                </div>
+                <hr class="my-0">
+                <div class="mb-2 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Tel.no</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control border-0" id="inputPassword" required>
+                    </div>
+                </div>
+                <div class="alert alert-orange d-flex align-items-center" role="alert">
+                    <svg height="20px" version="1.1" viewBox="0 0 20 20" width="20px" xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink"><title/><desc/><defs/><g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1"><g fill="currentColor" id="Core" transform="translate(-2.000000, -212.000000)"><g id="error" transform="translate(2.000000, 212.000000)"><path d="M10,0 C4.5,0 0,4.5 0,10 C0,15.5 4.5,20 10,20 C15.5,20 20,15.5 20,10 C20,4.5 15.5,0 10,0 L10,0 Z M11,15 L9,15 L9,13 L11,13 L11,15 L11,15 Z M11,11 L9,11 L9,5 L11,5 L11,11 L11,11 Z" id="Shape"/></g></g></g></svg>
+                    <div>In case the details are incorrect please visit the Web Check-In section of our website or ask your Travel Agent
+                        for help to update them.
+                    </div>
+                </div>
+            </form>
+
+            <div class="table-responsive mb-3">
+                <table class="table table-bordered border-white bg-primary">
+                    <thead>
+                    <tr>
+                        <th scope="col">Ship</th>
+                        <th scope="col">Embarkation Port</th>
+                        <th scope="col">Embarkation Date</th>
+                        <th scope="col">Your check-in opens<sup>(1)</sup></th>
+                        <th scope="col">Your check-in closes within 1 hour from</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Goddess of the Night</td>
+                        <td>Mykonos, Greece</td>
+                        <td>00/00/0000</td>
+                        <td>00:00</td>
+                        <td>00:00</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-responsive mb-3">
+                <table class="table border-primary caption-top">
+                <caption class="text-orange">ALL BELOW FIELDS ARE REQUIRED</caption>
+                <tbody>
+                <tr>
+                    <th class="fw-normal">Last name</th>
+                    <td>Lorem ipsum</td>
+                    <th class="fw-normal">State</th>
+                    <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <th class="fw-normal">Country of issue</th>
+                    <td>Lorem ipsum</td>
+                    <th class="fw-normal">Place of birth</th>
+                    <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <th class="fw-normal">First Name</th>
+                    <td>Lorem ipsum</td>
+                    <th class="fw-normal">Country</th>
+                    <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <th class="fw-normal">Address<sup class="text-orange">(2)</sup></th>
+                    <td>Lorem ipsum</td>
+                    <th class="fw-normal">Passport/ID card no.</th>
+                    <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <th class="fw-normal">Nationality</th>
+                    <td>Lorem ipsum</td>
+                    <th class="fw-normal">Mobile<sup class="text-orange">(2)</sup></th>
+                    <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <th class="fw-normal">City</th>
+                    <td>Lorem ipsum</td>
+                    <th class="fw-normal">Date of issue (dd/mm/yy)</th>
+                    <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <th class="fw-normal">Date of birth</th>
+                    <td>Lorem ipsum</td>
+                    <th class="fw-normal">Home Tel. </th>
+                    <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <th class="fw-normal">Zip code</th>
+                    <td>Lorem ipsum</td>
+                    <th class="fw-normal">Expiry Date (dd/mm/yy) </th>
+                    <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                    <th class="fw-normal">Gender</th>
+                    <td>Lorem ipsum</td>
+                    <th class="fw-normal">Email<sup class="text-orange">(2)</sup> </th>
+                    <td>Lorem ipsum</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+            <div class="details text-orange">
+                1* Please refrain from arriving for check-in before the designated time. You will be asked to wait outside the terminal until your scheduled check-in time. Kindly adhere
+                to your assigned check-in time to prevent any delays at the cruise terminal. Please note that the departure time is subject to change without prior notice, and embarkation closes 2 hours before the ship's departure. 2* It is required to provide your mobile phone numbers and email addresses to ensure you receive crucial updates
+                about the cruise. Please ensure that accurate and current contact details for at least one member of your party are provided.
+            </div>
+        </section>
     </div>
 </div>
+
 
 </body>
 </html>
