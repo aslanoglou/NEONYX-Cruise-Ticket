@@ -155,5 +155,12 @@
       }
     }
   }
+  .form-check-input{
+    border-color: var(--bs-primary);
+    &:checked{
+      background-color:  var(--bs-primary);
+    }
+
+  }
 }
 
