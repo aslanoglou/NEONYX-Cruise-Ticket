@@ -34,16 +34,10 @@
 
   &__header{
     display: flex;
-    padding: 3rem 0 2rem 80px;
+    padding: 3rem 0 2rem;
     justify-content: center;
     align-items: center;
     width: 100%;
-    &__logo{
-      margin-left: auto;
-    }
-    &__barcode{
-      margin-left: auto;
-    }
   }
   .h2{
     background-color: var(--bs-primary);
