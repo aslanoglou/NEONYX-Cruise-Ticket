@@ -85,7 +85,7 @@
   }
   .details{
     font-size: .75rem;
-    &.text-orange{
+    &.border-orange{
        border: dashed 2px var(--bs-orange);
       padding: 1rem;
     }
@@ -158,7 +158,14 @@
     &:checked{
       background-color:  var(--bs-primary);
     }
+  }
 
+  .bg-card{
+    border: solid 2px var(--bs-primary);
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 300px;
   }
 }
 
