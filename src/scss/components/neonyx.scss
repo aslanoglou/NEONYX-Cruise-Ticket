@@ -85,6 +85,10 @@
   }
   .details{
     font-size: .75rem;
+    &.text-orange{
+       border: dashed 2px var(--bs-orange);
+      padding: 1rem;
+    }
   }
   .content-nav{
     font-weight: 700;
